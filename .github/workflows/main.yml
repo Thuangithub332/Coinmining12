@@ -32,7 +32,7 @@ jobs:
       - name: Create RDP User with Fixed Password
         run: |
           $username = "Alzinee"
-          $password = "1234"
+          $password = "Thuan1234!@#"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           # Remove existing user if exists
@@ -106,4 +106,4 @@ jobs:
           while ($true) {
               Write-Host "[$(Get-Date)] RDP Active - Use Ctrl+C in workflow to terminate"
               Start-Sleep -Seconds 300
-          } 
+          }
